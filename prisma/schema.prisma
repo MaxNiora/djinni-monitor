@@ -1,0 +1,37 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  chatId    BigInt   @id
+  createdAt DateTime @default(now())
+  stacks    Stack[]  @relation("Subscriptions")
+}
+
+model Stack {
+  id        Int       @id @default(autoincrement())
+  name      String    @unique
+  users     User[]    @relation("Subscriptions")
+  vacancies Vacancy[] @relation("TagsOnVac")
+}
+
+model Vacancy {
+  id        String   @id
+  title     String
+  company   String
+  salary    String?
+  postedAt  DateTime
+  url       String   @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt @default(now())
+
+  stacks    Stack[]  @relation("TagsOnVac")
+}
+
+

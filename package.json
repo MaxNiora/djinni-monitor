@@ -1,0 +1,25 @@
+{
+  "name": "djinni-monitor",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "migrate": "prisma migrate deploy"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.0",
+    "axios": "^1.6.2",
+    "dotenv": "^16.4.1",
+    "node-telegram-bot-api": "^0.63.0",
+    "pg": "^8.11.3",
+    "puppeteer": "^22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "prisma": "^5.10.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.4"
+  }
+}
+
