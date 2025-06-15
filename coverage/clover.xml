@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1750000365528" clover="3.2.0">
+  <project timestamp="1750000365528" name="All files">
+    <metrics statements="9" coveredstatements="9" conditionals="25" coveredconditionals="18" methods="1" coveredmethods="1" elements="35" coveredelements="28" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
+    <file name="parser.ts" path="C:\Users\maxni\djinni-monitor\src\scraper\parser.ts">
+      <metrics statements="9" coveredstatements="9" conditionals="25" coveredconditionals="18" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="17" count="1" type="cond" truecount="6" falsecount="2"/>
+      <line num="20" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="26" count="1" type="cond" truecount="2" falsecount="1"/>
+      <line num="30" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

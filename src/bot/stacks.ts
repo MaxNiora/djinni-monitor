@@ -1,7 +1,7 @@
 import { prisma } from "../db/client";
 import TelegramBot, { InlineKeyboardButton } from "node-telegram-bot-api";
 
-export const STACKS = ["Node.js", "Python", "Java", "Ruby"];
+export const STACKS = ["Node.js", "Python", "Java", "Ruby", "PHP", "Android", "Rust"];
 
 export function buildKeyboard(): InlineKeyboardButton[][] {
   const kbd = STACKS.map((s) => [{ text: s, callback_data: `toggle:${s}` }]);
